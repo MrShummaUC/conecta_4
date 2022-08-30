@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { LoadingController, NavController } from '@ionic/angular';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-mantenimiento',
@@ -7,9 +9,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MantenimientoPage implements OnInit {
 
-  constructor() { }
+  constructor(
+    private navCtrl: NavController, 
+    private loadingController: LoadingController,
+    private router: Router
+  ) { }
 
   ngOnInit() {
+  }
+
+  async toIndex() {
+    const loading = await this.loadingController.create({
+      message: 'Cargando...',
+      duration: 500,
+      cssClass: 'custom-loading',
+    });
+    console.log('Push the button "Volver"')
+    this.navCtrl.navigateForward('index')
+    await loading.present();
   }
 
 }
