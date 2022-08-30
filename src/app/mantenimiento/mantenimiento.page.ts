@@ -22,7 +22,7 @@ export class MantenimientoPage implements OnInit {
     const loading = await this.loadingController.create({
       message: 'Cargando...',
       duration: 500,
-      cssClass: 'custom-loading',
+      spinner: 'circles',
     });
     console.log('Push the button "Volver"')
     this.navCtrl.navigateForward('index')

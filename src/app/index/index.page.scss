@@ -11,6 +11,7 @@ ion-toolbar{
       font-weight: bold;
       color: whitesmoke;
       text-align: center;
+      text-decoration: underline;
     }
 }
  
@@ -18,9 +19,15 @@ ion-toolbar{
 .btns{
     display: flex;
     flex-direction: column;
-    margin: 10px;
+    
     justify-content: center;
     ion-button{
+        box-shadow:
+            inset 0 -3em 3em rgba(0,0,0,0.1),
+                    0 0  0 2px rgb(255,255,255),
+                    0.3em 0.3em 1em rgba(0,0,0,0.3);
+        
+        margin: 1px 35px 20px 35px;
         ion-icon{
             margin-right: 5px;
         }
