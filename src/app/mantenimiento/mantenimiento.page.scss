@@ -7,8 +7,7 @@ ion-content.background{
 ion-content{
     --background: none;
   
-    ion-title{
-      padding: 0px 50px 50px 50px;
+    .texto{
       font-family: fantasy;
       font-style: inherit;
       font-variant: small-caps;
@@ -16,7 +15,20 @@ ion-content{
       font-weight: bold;
       color: whitesmoke;
       text-align: center;
-      margin-top: 95px;
+      margin-top: 80px;
+    }
+}
+
+//Botones
+.btns{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    justify-content: center;
+    ion-button{
+        ion-icon{
+            margin-right: 5px;
+        }
     }
 }
 
