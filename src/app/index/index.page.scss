@@ -13,15 +13,26 @@ ion-toolbar{
       text-align: center;
     }
   }
-  
-  //Footer
-  
+ 
+//Botones
+.btns{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    justify-content: center;
+    ion-button{
+        ion-icon{
+            margin-right: 5px;
+        }
+    }
+}
   
 // Fondo
 ion-content.background{
     --background: url(../../assets/img/vector-travel-auto-ciberpunk.jpg) 30% 50% no-repeat;
 }
 
+//Footer
 ion-footer{
     .footer-copy {
         color: whitesmoke;
