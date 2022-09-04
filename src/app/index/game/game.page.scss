@@ -1,0 +1,32 @@
+//Banner
+ion-toolbar{
+    --background: none;
+  
+    ion-title{
+      padding: 0px 50px 50px 50px;
+      font-family: fantasy;
+      font-style: inherit;
+      font-variant: small-caps;
+      font-size: 60px;
+      font-weight: bold;
+      color: whitesmoke;
+      text-align: center;
+      text-decoration: underline;
+    }
+}
+
+// Fondo
+ion-content.background{
+    --background: url(../../../assets/img/vector-travel-auto-ciberpunk.jpg) 30% 50% no-repeat;
+}
+
+//Footer
+ion-footer{
+    .footer-copy {
+        color: whitesmoke;
+        text-align: center;
+        font-weight: bold;
+        font-variant: small-caps;
+        font-style: oblique;
+    }
+}
